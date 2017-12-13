@@ -1,0 +1,56 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+
+  <title>Program testowy sterownika rolet --- ALVO INTEGRA ---</title>
+  <meta name="description">
+  <meta name="Marcin Hornik">
+
+
+  <script  src="http://localhost:35729/livereload.js" type="text/javascript"></script>
+  <script  src="ButtonComments.js" type="text/javascript"></script>
+  <link rel="Stylesheet" type="text/css" href="style.css" />
+
+
+</head>
+
+<body >
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+  <script type="text/javascript">
+
+  </script>
+  <input id="testowy" size="10" value="123">
+
+  <div id="textH2">Program testowy sterownika rolet:</div>
+
+  <input type="text" value="192.168.0.13" size="10" id="ipAddress"><br>
+
+  <!-- <button id="button1"  onmousedown="W0001()" onmouseup="W0000()">test on/off</button> -->
+  <br><br>
+  <button id="button2" onmousedown="ipRead(), W0001()" onmouseup="testAll()">Testuj wszystkie przekaźniki</button>
+
+
+  <br><br>
+  <button id="button3" onmousedown="ipRead(), W0001()" onmouseup="W0000()">S1</button>
+  <button id="button4"  onmousedown="ipRead(), W0002()" onmouseup="W0000()">S2</button>
+  <button id="button5"  onmousedown="ipRead(), W0004()" onmouseup="W0000()">S3</button>
+  <button id="button6" onmousedown="ipRead(), W0008()" onmouseup="W0000()">S4</button>
+  <button id="button7"  onmousedown="ipRead(), W0016()" onmouseup="W0000()">S5</button>
+  <button id="button8"  onmousedown="ipRead(), W0032()" onmouseup="W0000()">S6</button>
+  <button id="button9"  onmousedown="ipRead(), W0064()" onmouseup="W0000()">S7</button>
+  <button id="button10"  onmousedown="ipRead(), W0128()" onmouseup="W0000()">S8</button>
+  <button id="button11" onmousedown="ipRead(), W11()" onmouseup="W14()">S9</button>
+  <button id="button12" onmousedown="ipRead(), W12()" onmouseup="W14()">S10</button>
+
+  <img src="rolety.png" id="roletyPNG">
+
+  <div id="testInProcess"></div>
+
+</body>
+
+</html>
